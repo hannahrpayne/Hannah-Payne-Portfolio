@@ -80,7 +80,7 @@ a:visited{
  /*banner*/
 
  #banner{
-    height: 760px;
+    height: 700px;
     background: rgb(210,211,255);
     background: linear-gradient(103deg, rgba(210,211,255,1) 13%, rgba(151,153,244,1) 37%, rgba(217,93,164,1) 67%, rgba(251,182,174,1) 88%); 
     display: flex;
@@ -105,9 +105,15 @@ a:visited{
     transform: translate(160px,0);
  }
 
+ #banner h5 {
+    font-size: 20px;
+ }
+
+
  /*about me*/
-#about-me{
-    height: 760px;
+ /*about me*/
+ #about-me{
+    height: 666px;
     padding: 30px;
 
 }
@@ -120,22 +126,36 @@ a:visited{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
+    align-items: center;
 }
 
  #about-me p{
     width: 400px;
-    min-width: 600px;
+    min-width: 461px;
     font-family: 'DM Sans', 'Space Mono', monospace;
     color: #b2b6f4;
-    font-size: 25px;
-    justify-self: flex-end;
+    font-size: 27px;
+    /*! justify-self: flex-end; */
  }
 
- #about-me img{
-    margin-top: 200px;
-    height: 350px;
+ .headshot{
+    margin-top: 45px;
+    border-radius: 5%;
+    /* filter: grayscale(100%); */
+    flex-shrink: 0;
+	margin: 20px;
+	height: calc(260px + 6vw);
+	width: calc(260px + 6vw);
+	border: calc(8px + 0.2vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 30%;
+    background-image: url(./resouces/images/picture.png), linear-gradient(to bottom left,  rgba(151,153,244,1) 37%, rgba(217,93,164,1) 67%);
 }
+
 
 /*skills*/
 
@@ -210,7 +230,7 @@ a:visited{
 
 #contact-me{
     height: 500px;
-    display: flex;
+    display: block;
     padding: 30px;
 
 }
@@ -223,6 +243,64 @@ form{
     color: #b2b6f4;
     justify-self: center;
     align-self: center;
+    width: 100%;
+    max-width:420px; margin:50px auto;
+}
+ .contact-me-container hr {
+    margin-top: 40px;
+ }
 
+ 
+
+form label{
+  color: #b2b6f4;
+  font-family: 'DM Sans', 'Space Mono', monospace;
+  font-weight:500;
+  font-size: 16px;
+  border-radius: 5px;
+  line-height: 22px;
+  transition: all 0.3s;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  width: 100%;
 }
 
+form input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 19px;
+    
+}
+
+form textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  background:#b2b6f4;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:#1e1457;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:14px;
+  font-weight:700;
+}
+[type="submit"]:hover { background: #e8ff4f5b;; }
+
+footer{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #b2b6f4;
+}
