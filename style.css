@@ -146,7 +146,7 @@ a:visited{
 	margin: 20px;
 	height: calc(260px + 6vw);
 	width: calc(260px + 6vw);
-	border: calc(8px + 0.2vw) solid transparent;
+	border: calc(12px + 0.2vw) solid transparent;
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	background-size: cover;
@@ -172,7 +172,6 @@ a:visited{
     list-style: none;
     display: flex;
     padding: 50px;
-    height: 00px;
     color: #ebddee;
 }
 
@@ -303,4 +302,127 @@ footer{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: #b2b6f4;
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    .aboutme-container{
+
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    #about-me{
+        height: 900px;
+    }
+
+    #projects{
+        height: 800px;
+    }
+
+    #projects h2{
+        margin-bottom: 150px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    #banner{
+        height: 600px;
+    }
+
+    .banner-text-container{
+        margin-top: 60px;
+    }
+
+    #banner h1 {
+        font-size: 50px;
+    }
+
+    #banner h5{
+        font-size: 16px;
+    }
+
+    #about-me{
+        height: 900px;
+    }
+
+    #projects{
+        height: 1100px;
+    }
+
+    #projects h2{
+        margin-bottom: 300px;
+    }
+    .skills-ul li{
+       
+        padding: 20px;
+        color: #ebddee;
+    }
+    
+ }
+
+@media all and (max-width: 480px) {
+    #banner{
+        height: 450px;
+    }
+
+    .banner-text-container{
+        margin-top: 100px;
+    }
+
+    #banner h1 {
+        font-size: 40px;
+    }
+
+    #banner h5{
+        font-size: 16px;
+    }
+
+    .banner-color {
+        transform: translate(90px,0);
+    }
+
+    #about-me{
+        height: 900px;
+    }
+
+    #about-me p{
+        font-size: 25px;
+        min-width: 0;
+    }
+
+    #projects{
+        height: 1100px;
+    }
+
+    #projects h2{
+        margin-bottom: 300px;
+    }
+    .skills-ul li{
+       
+        padding: 10px;
+        color: #ebddee;
+    }
+
+    .nav-links {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .nav-links li {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .nav-item a {
+        padding: 0 10px;
+        
+    }
+    .nav-bar{
+        justify-content: center;
+    }
 }
